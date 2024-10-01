@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giordano's Lumber</title>
+    <style>
+        body {
+            background-color: #f8f8f8; /* Off-white background color */
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+        }
+        header {
+            background-color: rgba(34, 139, 34, 0.5); /* Very light forest green */
+            height: 15%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        h1 {
+            font-size: 48px; /* Adjust the size as needed */
+            margin: 0;
+        }
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: url('pine_trees.jpg') no-repeat center center;
+            background-size: cover;
+            position: relative;
+        }
+        main::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.7); /* 35% opacity */
+            z-index: 1;
+        }
+        p {
+            font-size: 24px; /* Adjust the size as needed */
+            text-align: center;
+            margin: 20px 0;
+            position: relative;
+            z-index: 2;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #e0e0e0; /* Light grey background for the footer */
+        }
+        a {
+            color: #0000ee; /* Link color */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Giordano Lumber</h1>
+    </header>
+    <main>
+        <p>We lovingly grow our pines on our nearly 1000 acre farm in Jeffersonville, Georgia</p>
+    </main>
+    <footer>
+        <a href="mailto:giordano.andrew@gmail.com">Contact Us</a>
+    </footer>
+</body>
+</html>
